@@ -6,8 +6,10 @@
   <title>Colorfly Makeup</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
 <body>
+  <div id="mensagem-confirmacao"></div>
 
   <!-- Header -->
   <header>
@@ -16,8 +18,8 @@
       <li><a href="#home" class="active">Início</a></li>
       <li><a href="#about">Sobre</a></li>
       <li><a href="#menu">Produtos</a></li>
-      <li><a href="#review">Depoimentos</a></li>
-      <li><a href="#contact">Contato</a></li>
+      <li><a href="#review">Contatos</a></li>
+      <li><a href="carrinho.html"><i class="bx bx-cart"></i> <span id="cart-count">0</span></a></li>
     </ul>
     <div id="menu-icon" class='bx bx-menu'></div>
   </header>
@@ -37,7 +39,7 @@
   <!-- Sobre -->
   <section class="about" id="about">
     <div class="about-img">
-      <img src="img/about.jpg" alt="Borboletas e beleza">
+      <img src="img/COLORFLY.png" alt="COLORFLY MAKEUP">
     </div>
     <div class="about-text">
       <h2>Sobre a Colorfly</h2>
@@ -54,6 +56,7 @@
         <img src="img/m1.png" alt="Batom Rosa ">
         <h3>Batom Rosa </h3>
         <div class="price">R$10,00 <span>R$19,90</span></div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
       </div>
       <div class="box">
         <img src="img/m2.png" alt="Corretivo">
@@ -132,17 +135,23 @@
       <p>Quer saber mais ou fazer parte do nosso voo colorido? Fale com a gente!</p>
       <div class="contact-info">
         <span><i class='bx bxs-phone'></i> +55 11 99999-9999</span>
-        <span><i class='bx bxs-envelope'></i> contato@colorflymakeup.com</span>
+        <span><i class='bx bxs-envelope'></i> colorflymakeup@gmail.com</span>
         <span><i class='bx bxs-map'></i> Fortaleza, CE</span>
       </div>
     </div>
     <div class="contact-form">
-      <form action="#">
-        <input type="text" placeholder="Seu Nome" required>
-        <input type="email" placeholder="Seu Email" required>
-        <textarea cols="30" rows="5" placeholder="Sua Mensagem"></textarea>
-        <input type="submit" value="Enviar" class="btn">
-      </form>
+     <form action="https://formsubmit.co/colorflymakeup@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="message" cols="30" rows="5" placeholder="Sua Mensagem" required></textarea>
+
+  <!-- Proteções e configurações -->
+     <input type="hidden" name="_captcha" value="false">
+
+     <input type="submit" value="Enviar" class="btn">
+    </form>
+
+
     </div>
   </section>
 
