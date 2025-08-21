@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorfly Makeup</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+  <div id="mensagem-confirmacao"></div>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">Colorfly Makeup</a>
+    <ul class="navlist">
+      <li><a href="#home" class="active">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#menu">Produtos</a></li>
+      <li><a href="#review">Contatos</a></li>
+      <li><a href="carrinho.html"><i class="bx bx-cart"></i> <span id="cart-count">0</span></a></li>
+    </ul>
+    <div id="menu-icon" class='bx bx-menu'></div>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Onde a <span style="color: var(--main-color);">beleza</span> ganha asas!</h1>
+      <p>Transforme sua rotina com cor, brilho e leveza. Descubra a liberdade de ser você com a Colorfly Makeup.</p>
+      <a href="#menu" class="btn">Ver Produtos</a>
+    </div>
+    <div class="home-img">
+      <img src="img/Waterproof makeup-pana.png" alt="Maquiagem mágica">
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/COLORFLY.png" alt="COLORFLY MAKEUP">
+    </div>
+    <div class="about-text">
+      <h2>Sobre a Colorfly</h2>
+      <p>Colorfly Makeup é onde a beleza ganha asas! Inspirada na delicadeza das borboletas e na magia das cores, nossa marca celebra a liberdade de ser quem você é — com leveza, brilho e muita criatividade.</p>
+      <p>Cada produto é pensado para transformar sua rotina em um momento encantado, cheio de cor, autoestima e alegria. Seja para voar alto com um olhar marcante ou flutuar suave com uma pele radiante, estamos aqui para te acompanhar em cada fase da sua beleza.</p>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="menu" id="menu">
+    <h2 class="title">Nossos Produtos</h2>
+     <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="boca">Boca</button>
+      <button class="filter-btn" data-filter="skin">Skin Care</button>
+      <button class="filter-btn" data-filter="iluminador">Iluminador</button>
+      <button class="filter-btn" data-filter="corretivo">Corretivo</button>
+      <button class="filter-btn" data-filter="base">Base</button>
+      <button class="filter-btn" data-filter="blush">Blush</button>
+    </div>
+    <div class="menu-container">
+      <div class="box" data-category="boca">
+        <img src="img/lipglitter.jpg" alt="Batom Rosa ">
+        <h3>Lip Gloss 24H </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Lip Gloss 24H" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/sobrancelha.jpg" alt="2">
+        <h3>Sombra para sobrancelha</h3>
+        <div class="price">R$10,00 </div>
+           <button class="add-carrinho" data-produto="Sombra para sobrancelha" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="skin">
+        <img src="img/serumantiacene.jpg" alt="Iluminador ">
+        <h3>Serum Antiacne </h3>
+        <div class="price">R$10,00 <span>R$13,00</span></div>
+           <button class="add-carrinho" data-produto="Serum Antiacne" data-preco="29.90">Adicionar</button>
+      </div>
+     <div class="box" data-category="skin">
+        <img src="img/sabRosaMosqueta.jpg" alt="Batom Rosa ">
+        <h3>Sabonete facial RosaMosqueta</h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Sabonete facial RosaMosqueta" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box" data-category="skin">
+        <img src="img/sabonete.jpg" alt="Batom Rosa ">
+        <h3>Sabonete Pós Make</h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Sabonete Pós Make" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box" data-category="iluminador">
+        <img src="img/podefada.jpg" alt="Batom Rosa ">
+        <h3>Iluminador Pó de fada </h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Iluminador Pó de fada" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box" data-category="iluminador">
+        <img src="img/paletailuminador.jpg" alt="Batom Rosa ">
+        <h3>Paleta Iluminadora </h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Paleta Iluminadora" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box" data-category="skin">
+        <img src="img/mousse.jpg" alt="Batom Rosa ">
+        <h3>Mousse Facial Pitaya/Melancia</h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Mousse Facial Pitaya/Melancia" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box">
+        <img src="img/megacurve.jpg" alt="Batom Rosa ">
+        <h3>Máscara de cílios MegaCurve </h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Máscara de cílios MegaCurve" data-preco="29.90">Adicionar</button>
+      </div>
+       <div class="box">
+        <img src="img/Lapisdeolho.jpg" alt="Batom Rosa ">
+        <h3>Lápis de olho</h3>
+        <div class="price">R$10,00 <span>R$19,90</span></div>
+           <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="blush">
+        <img src="img/IMG_20250505_201951874.jpg" alt="Batom Rosa ">
+        <h3>Blush RubyRose</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/IMG_20250505_201859789.jpg" alt="Batom Rosa ">
+        <h3>Esponja SabrinaSato </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="iluminador">
+        <img src="img/iluminadorpo.jpg" alt="Batom Rosa ">
+        <h3>Pó iluminador Irresistible</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="boca">
+        <img src="img/glossBocaodemo.jpg" alt="Batom Rosa ">
+        <h3>Gloss S.O.S Bocão Vivai </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="boca">
+        <img src="img/glossHidraVolume.jpg" alt="Batom Rosa ">
+        <h3>Gloss Hidra Volume Vivai </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="boca">
+        <img src="img/GlossGuarda-chuva.jpg" alt="Batom Rosa ">
+        <h3>Gloss Guarda-Chuva </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/gelmodelador.jpg" alt="Batom Rosa ">
+        <h3>Gel modelador de sobrancelha Melu </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/EsponjaRubyR.jpg" alt="Batom Rosa ">
+        <h3>Esponja Feels RubyRose </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="skin">
+        <img src="img/esfoliante190g.jpg" alt="Batom Rosa ">
+        <h3>Esfoliante Facial/Corporal </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/deliniador.jpg" alt="Batom Rosa ">
+        <h3>Deliniador (Preto) RubyRose </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="corretivo">
+        <img src="img/corretivotrueskin.jpg" alt="Batom Rosa ">
+        <h3>Corretivo TrueSkin</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/chocofun.jpg" alt="Batom Rosa ">
+        <h3>Pó Solto ChocoFun </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="skin">
+        <img src="img/carvãoativadpo.jpg" alt="Batom Rosa ">
+        <h3>Máscara Facial Black </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/canetadlianiador.jpg" alt="Batom Rosa ">
+        <h3>Caneta Deliniadora Melu </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/browperfection.jpg" alt="Batom Rosa ">
+        <h3>Brow Perfection  </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/blushMahav.jpg" alt="Batom Rosa ">
+        <h3>Blush Dia a dia  </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="">
+        <img src="img/blindagem.jpg" alt="Batom Rosa ">
+        <h3>Blindagem Dapop </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="boca">
+        <img src="img/batomTeddy.jpg" alt="Batom Rosa ">
+        <h3>Batom Teddy</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="base">
+        <img src="img/base.jpg" alt="Batom Rosa ">
+        <h3>Base </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="base">
+        <img src="img/basemiamake.jpg" alt="Batom Rosa ">
+        <h3>Base antioxidante </h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="boca">
+        <img src="img/balmUrso.jpg" alt="Batom Rosa ">
+        <h3>Balm Urso</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+      <div class="box" data-category="skin">
+        <img src="img/antioleosidade.jpg" alt="Batom Rosa ">
+        <h3>Serum Antioleosidade</h3>
+        <div class="price">R$10,00</div>
+         <button class="add-carrinho" data-produto="Batom Rosa" data-preco="29.90">Adicionar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos 
+  <section class="review" id="review">
+    <h2 class="title">O Que Dizem</h2>
+    <div class="review-container">
+      <div class="box">
+        <img src="img/r1.jpg" alt="Cliente Anna">
+        <h3>Anna</h3>
+        <p>“A Colorfly trouxe magia para minha maquiagem! Me sinto leve e linda.”</p>
+      </div>
+      <div class="box">
+        <img src="img/r2.jpg" alt="Cliente Lucas">
+        <h3>Lucas</h3>
+        <p>“Adorei a proposta inclusiva e criativa. Produtos incríveis!”</p>
+      </div>
+      <div class="box">
+        <img src="img/r3.jpg" alt="Cliente Sophia">
+        <h3>Sophia</h3>
+        <p>“Qualidade excelente e embalagens encantadoras. Me identifiquei muito.”</p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contato -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Entre em Contato</h2>
+      <p>Quer saber mais ou fazer parte do nosso voo colorido? Fale com a gente!</p>
+      <div class="contact-info">
+        <span><i class='bx bxs-phone'></i> +55 11 99999-9999</span>
+        <span><i class='bx bxs-envelope'></i> colorflymakeup@gmail.com</span>
+        <span><i class='bx bxs-map'></i> Fortaleza, CE</span>
+      </div>
+    </div>
+    <div class="contact-form">
+     <form action="https://formsubmit.co/colorflymakeup@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="message" cols="30" rows="5" placeholder="Sua Mensagem" required></textarea>
+
+  <!-- Proteções e configurações -->
+     <input type="hidden" name="_captcha" value="false">
+
+     <input type="submit" value="Enviar" class="btn">
+    </form>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Colorfly Makeup. Beleza com liberdade.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
